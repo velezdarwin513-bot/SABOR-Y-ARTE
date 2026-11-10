@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solicita una reserva en el restaurante Sabor & Arte.">
+  <title>Sabor & Arte | Reservas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <a class="marca" href="index.html">Sabor <span>&</span> Arte</a>
+    <button class="boton-menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú</button>
+    <nav id="navegacion" class="navegacion" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a><a href="menu.html">Menú</a><a class="activo" aria-current="page" href="reservas.html">Reservas</a>
+    </nav>
+  </header>
+  <main id="contenido" class="seccion pagina">
+    <p class="etiqueta">QUEREMOS RECIBIRTE</p>
+    <h1>Reserva tu mesa</h1>
+    <p class="centrado">Completa el formulario y registra tu solicitud de reserva.</p>
+    <div class="reserva-layout">
+      <aside class="info-reserva"><h2>Una mesa te espera</h2><p>Comparte una buena comida en un ambiente tranquilo y acogedor.</p><ul><li>Martes a domingo</li><li>12:00 a 22:00</li><li>Atención para grupos pequeños y familiares</li></ul><p class="aviso">Esta demostración no envía datos a un servidor. La solicitud se confirma únicamente en esta página.</p></aside>
+      <form id="form-reserva" class="formulario" novalidate>
+        <div class="campo"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" type="text" autocomplete="name" minlength="3" maxlength="60" required><small class="error" id="error-nombre"></small></div>
+        <div class="campo"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email" required><small class="error" id="error-correo"></small></div>
+        <div class="campo"><label for="personas">Número de personas</label><select id="personas" name="personas" required><option value="">Selecciona una opción</option><option value="1">1 persona</option><option value="2">2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option><option value="5">5 personas</option><option value="6">6 personas</option></select><small class="error" id="error-personas"></small></div>
+        <div class="campo"><label for="fecha">Fecha de reserva</label><input id="fecha" name="fecha" type="date" required><small class="error" id="error-fecha"></small></div>
+        <div class="campo"><label for="hora">Hora aproximada</label><select id="hora" name="hora" required><option value="">Selecciona una hora</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option></select><small class="error" id="error-hora"></small></div>
+        <div class="campo"><label for="comentario">Comentario (opcional)</label><textarea id="comentario" name="comentario" rows="3" maxlength="250" placeholder="¿Alguna indicación especial?"></textarea></div>
+        <button class="boton principal enviar" type="submit">Enviar solicitud</button>
+        <p id="mensaje-formulario" class="mensaje" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </main>
+  <footer class="pie"><p><strong>Sabor & Arte</strong> · Proyecto académico</p><p>© 2026 Sabor & Arte</p></footer>
+</body>
+</html>

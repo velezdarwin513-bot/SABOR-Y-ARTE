@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta las especialidades y precios referenciales de Sabor & Arte.">
+  <title>Sabor & Arte | Menú</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <a class="marca" href="index.html">Sabor <span>&</span> Arte</a>
+    <button class="boton-menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú</button>
+    <nav id="navegacion" class="navegacion" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a><a class="activo" aria-current="page" href="menu.html">Menú</a><a href="reservas.html">Reservas</a>
+    </nav>
+  </header>
+  <main id="contenido" class="seccion pagina">
+    <p class="etiqueta">PREPARADOS PARA TI</p>
+    <h1>Nuestro menú</h1>
+    <p class="centrado">Una selección de platos inspirados en sabores que invitan a compartir.</p>
+    <div class="filtros" role="group" aria-label="Filtrar platos por categoría">
+      <button class="filtro seleccionado" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+      <button class="filtro" type="button" data-filtro="entradas" aria-pressed="false">Entradas</button>
+      <button class="filtro" type="button" data-filtro="principales" aria-pressed="false">Principales</button>
+      <button class="filtro" type="button" data-filtro="postres" aria-pressed="false">Postres</button>
+    </div>
+    <p id="estado-filtro" class="estado" aria-live="polite">Mostrando todos los platos.</p>
+    <div class="menu-grid">
+      <article class="plato" data-categoria="entradas"><div class="plato-foto foto-1" role="img" aria-label="Bruschettas con tomate y albahaca"></div><div class="plato-info"><div><h2>Bruschettas de la casa</h2><span class="precio">$4.50</span></div><p>Pan tostado, tomate fresco, albahaca y aceite de oliva.</p><span class="categoria">ENTRADA</span></div></article>
+      <article class="plato" data-categoria="entradas"><div class="plato-foto foto-2" role="img" aria-label="Ensalada fresca de vegetales"></div><div class="plato-info"><div><h2>Ensalada mediterránea</h2><span class="precio">$5.00</span></div><p>Hojas verdes, vegetales de temporada y vinagreta cítrica.</p><span class="categoria">ENTRADA</span></div></article>
+      <article class="plato" data-categoria="principales"><div class="plato-foto foto-3" role="img" aria-label="Pasta con salsa cremosa"></div><div class="plato-info"><div><h2>Pasta cremosa</h2><span class="precio">$8.50</span></div><p>Pasta al dente con salsa de la casa y queso parmesano.</p><span class="categoria">PRINCIPAL</span></div></article>
+      <article class="plato" data-categoria="principales"><div class="plato-foto foto-4" role="img" aria-label="Hamburguesa artesanal con papas"></div><div class="plato-info"><div><h2>Hamburguesa artesanal</h2><span class="precio">$9.00</span></div><p>Pan suave, carne, vegetales frescos y papas doradas.</p><span class="categoria">PRINCIPAL</span></div></article>
+      <article class="plato" data-categoria="postres"><div class="plato-foto foto-5" role="img" aria-label="Porción de pastel de chocolate"></div><div class="plato-info"><div><h2>Pastel de chocolate</h2><span class="precio">$4.00</span></div><p>Bizcocho de cacao con una delicada cubierta de chocolate.</p><span class="categoria">POSTRE</span></div></article>
+      <article class="plato" data-categoria="postres"><div class="plato-foto foto-6" role="img" aria-label="Cheesecake con frutos rojos"></div><div class="plato-info"><div><h2>Cheesecake de frutos rojos</h2><span class="precio">$4.50</span></div><p>Textura cremosa con salsa de frutos rojos.</p><span class="categoria">POSTRE</span></div></article>
+    </div>
+    <p class="nota">Precios e imágenes ilustrativos para este proyecto académico.</p>
+  </main>
+  <footer class="pie"><p><strong>Sabor & Arte</strong> · Proyecto académico</p><p>© 2026 Sabor & Arte</p></footer>
+</body>
+</html>
